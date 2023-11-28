@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./app.css" />
+    <script src="./app.js" defer></script>
+    <script src="/socket.io/socket.io.js"></script>
+  </head>
+  <div class="container">
+    <div class="container container-fluid interface">
+      <h1>Sending Message</h1>
+      <input
+        id="name"
+        type="text"
+        class="container form-control"
+        placeholder="Name"
+        name="name"
+      />
+      <textarea
+        name="message"
+        id="message"
+        class="container multi-line"
+        placeholder="Message"
+        rows="3"
+        cols="20"
+      ></textarea>
+      <button id="btnSend" class="btn btn-success">Send</button>
+    </div>
+    <div id="output" class="container interface-output container-fluid">
+      <h1>Message Sent</h1>
+      <div id="messages"></div>
+    </div>
+  </div>
+</html>
